@@ -3,6 +3,15 @@ import styled from 'styled-components'
 import { isAddress } from '../../utils/index.js'
 import EthereumLogo from '../../assets/hpb.png'
 
+const LOGO_URL = {
+  "0xd378634119d2f7b3cf3d60e0b0f5e048e74ce3cf": "https://dex.hpbnode.com/download/token-list/logo/asset_USDT.svg",
+  "0x6383f770f1eec68e80ac0c5527be71a11b4d182c": "https://dex.hpbnode.com/download/token-list/logo/asset_hpd.svg",
+  "0xe78984541a634c52c760fbf97ca3f8e7d8f04c85": "https://dex.hpbnode.com/download/token-list/logo/asset_old_usdt.svg",
+  "0x0f63352df611350201c419de9399a67e50d4b820": "https://dex.hpbnode.com/download/token-list/logo/asset_ETH.svg",
+  "0xa7be5e053cb523585a63f8f78b7dbca68647442f": "https://dex.hpbnode.com/download/token-list/logo/asset_esr.svg",
+  "0xbe05ac1fb417c9ea435b37a9cecd39bc70359d31": "https://dex.hpbnode.com/download/token-list/logo/asset_whpb.svg",
+}
+
 const BAD_IMAGES = {}
 
 const Inline = styled.div`
@@ -30,7 +39,7 @@ const StyledEthereumLogo = styled.div`
   }
 `
 
-export default function TokenLogo ({ address, header = false, size = '24px', ...rest }) {
+export default function TokenLogo({ address, header = false, size = '24px', ...rest }) {
   const [error, setError] = useState(false)
 
   useEffect(() => {
@@ -71,10 +80,17 @@ export default function TokenLogo ({ address, header = false, size = '24px', ...
     )
   }
 
+  let path = LOGO_URL[address?.toLowerCase()]
 
-  const path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
-    address
-  )}/logo.png`
+  if (!path) {
+    return (
+      <Inline>
+        <span {...rest} alt={''} style={{ fontSize: size }} role="img" aria-label="face">
+          🤔
+        </span>
+      </Inline>
+    )
+  }
 
   return (
     <Inline>

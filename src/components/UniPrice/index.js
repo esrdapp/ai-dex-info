@@ -27,16 +27,18 @@ export default function UniPrice() {
   const daiPair = usePairData('0xa478c2975ab1ea89e8196811f51a7b7ade33eb11')
   const usdcPair = usePairData('0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc')
   const usdtPair = usePairData('0x118e1317dc0469c9aedf7ade5d1aa1a47fc2f5b4')
+  const oldUsdtPair = usePairData('0x0c85fe2dbc540386d2c1d907764956e18ea2ff6b')
 
   const totalLiquidity = useMemo(() => {
-    return daiPair && usdcPair && usdtPair
-      ? daiPair.trackedReserveUSD + usdcPair.trackedReserveUSD + usdtPair.trackedReserveUSD
+    return daiPair && usdcPair && usdtPair && oldUsdtPair
+      ? daiPair.trackedReserveUSD + usdcPair.trackedReserveUSD + usdtPair.trackedReserveUSD + oldUsdtPair.trackedReserveUSD
       : 0
-  }, [daiPair, usdcPair, usdtPair])
+  }, [daiPair, usdcPair, usdtPair, oldUsdtPair])
 
   const daiPerEth = daiPair ? parseFloat(daiPair.token0Price).toFixed(2) : '-'
   const usdcPerEth = usdcPair ? parseFloat(usdcPair.token0Price).toFixed(2) : '-'
   const usdtPerEth = usdtPair ? parseFloat(usdtPair.token1Price).toFixed(2) : '-'
+  const oldUsdtPerEth = oldUsdtPair ? parseFloat(oldUsdtPair.token1Price).toFixed(2) : '-'
 
   return (
     <PriceCard>
@@ -59,6 +61,14 @@ export default function UniPrice() {
             {usdtPair && totalLiquidity ? formatPercent(usdtPair.trackedReserveUSD / totalLiquidity) : '-'}
           </TYPE.light>
         </RowFixed>
+
+        <RowFixed>
+          <TYPE.main>OLDUSDT/HPB: {formattedNum(oldUsdtPerEth, true)}</TYPE.main>
+          <TYPE.light style={{ marginLeft: '10px' }}>
+            {oldUsdtPair && totalLiquidity ? formatPercent(oldUsdtPair.trackedReserveUSD / totalLiquidity) : '-'}
+          </TYPE.light>
+        </RowFixed>
+
       </AutoColumn>
     </PriceCard>
   )

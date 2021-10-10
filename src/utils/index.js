@@ -42,13 +42,13 @@ export function getPoolLink (token0Address, token1Address = null, remove = false
     return (
       `https://app.hpdex.org/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xbe05ac1fb417c9ea435b37a9cecd39bc70359d31' ? 'HPB' : token0Address}/${'HPB'}`
+      `/${token0Address === '0xbe05ac1fb417c9ea435b37a9cecd39bc70359d31' ? 'HPB' : token0Address}/${'HPB'}`
     )
   } else {
     return (
       `https://app.hpdex.org/#/` +
       (remove ? `remove` : `add`) +
-      `/v2/${token0Address === '0xbe05ac1fb417c9ea435b37a9cecd39bc70359d31' ? 'HPB' : token0Address}/${token1Address === '0xbe05ac1fb417c9ea435b37a9cecd39bc70359d31' ? 'HPB' : token1Address
+      `/${token0Address === '0xbe05ac1fb417c9ea435b37a9cecd39bc70359d31' ? 'HPB' : token0Address}/${token1Address === '0xbe05ac1fb417c9ea435b37a9cecd39bc70359d31' ? 'HPB' : token1Address
       }`
     )
   }

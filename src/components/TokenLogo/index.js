@@ -10,6 +10,9 @@ const LOGO_URL = {
   "0x0f63352df611350201c419de9399a67e50d4b820": "https://dex.hpbnode.com/download/token-list/logo/asset_ETH.svg",
   "0xa7be5e053cb523585a63f8f78b7dbca68647442f": "https://dex.hpbnode.com/download/token-list/logo/asset_esr.svg",
   "0xbe05ac1fb417c9ea435b37a9cecd39bc70359d31": "https://dex.hpbnode.com/download/token-list/logo/asset_whpb.svg",
+	"0x597e994b9f5a3e397c8c5cfdb3893bacddb8167d":"https://dex.hpbnode.com/download/token-list/logo/asset_STEAM.svg",
+	"0xf83811872d457532230a5f1f3cf0ca8f3aa0db55":"https://dex.hpbnode.com/download/token-list/logo/asset_420.svg",
+	"0x4ca7665a86fecd3c1df233d8ab72e82261ed838a":"https://dex.hpbnode.com/download/token-list/logo/asset_HBB.svg",
 }
 
 const BAD_IMAGES = {}

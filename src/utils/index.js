@@ -301,10 +301,10 @@ export const setThemeColor = (theme) => document.documentElement.style.setProper
 export const Big = (number) => new BigNumber(number)
 
 export const urls = {
-  showTransaction: (tx) => `https://hpbscan.org/tx/${tx}/`,
-  showAddress: (address) => `https://hpbscan.org/address/${address}/`,
-  showToken: (address) => `https://hpbscan.org/token/${address}/`,
-  showBlock: (block) => `https://hpbscan.org/block/${block}/`,
+  showTransaction: (tx) => `https://hscan.org/tx/${tx}/`,
+  showAddress: (address) => `https://hscan.org/address/${address}/`,
+  showToken: (address) => `https://hscan.org/token/${address}/`,
+  showBlock: (block) => `https://hscan.org/block/${block}/`,
 }
 
 export const formatTime = (unix) => {

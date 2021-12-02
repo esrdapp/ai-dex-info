@@ -15,6 +15,7 @@ const LOGO_URL = {
 	"0x4ca7665a86fecd3c1df233d8ab72e82261ed838a":"https://dex.hpbnode.com/download/token-list/logo/asset_HBB.svg",
   "0xdfe4051195a09a67defc36ce6bbb5e6edea745cb":"https://dex.hpbnode.com/download/token-list/logo/asset_KING.svg",
   "0xef8432fd5d8b6b33a9915cd6ad22fe9b6718db9b":"https://dex.hpbnode.com/download/token-list/logo/asset_DON.svg",
+  "0x8ce49d1feccc1b44fe69a9089c385f43091c1c6b":"https://dex.hpbnode.com/download/token-list/logo/ONE.svg",
 }
 
 const BAD_IMAGES = {}

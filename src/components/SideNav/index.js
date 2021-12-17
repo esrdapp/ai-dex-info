@@ -168,26 +168,26 @@ function SideNav({ history }) {
                 Hpdex.org
               </Link>
             </HeaderText>
-            {/* <HeaderText>
-              <Link href="https://v1.uniswap.info" target="_blank">
-                V1 Analytics
-              </Link>
-            </HeaderText> */}
-            {/* <HeaderText>
-              <Link href="https://uniswap.org/docs/v2" target="_blank">
-                Docs
-              </Link>
-            </HeaderText> */}
-            {/* <HeaderText>
-              <Link href="https://discord.com/invite/FCfyBSbCU5" target="_blank">
-                Discord
+            <HeaderText>
+              <Link href="https://github.com/hpdex-project" target="_blank">
+              Github
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://twitter.com/UniswapProtocol" target="_blank">
+              <Link href="https://t.me/hpdexglobal" target="_blank">
+                Telegram
+              </Link>
+            </HeaderText>
+            <HeaderText>
+              <Link href="https://medium.com/hpb-foundation" target="_blank">
+               Medium
+              </Link>
+            </HeaderText>
+            <HeaderText>
+              <Link href="https://twitter.com/HPB_Global" target="_blank">
                 Twitter
               </Link>
-            </HeaderText> */}
+            </HeaderText>
             <Toggle isActive={isDark} toggle={toggleDarkMode} />
           </AutoColumn>
           {!below1180 && (

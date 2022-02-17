@@ -179,12 +179,12 @@ function SideNav({ history }) {
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://medium.com/hpb-foundation" target="_blank">
-               Medium
+              <Link href="https://www.hpclub.org/" target="_blank">
+              Forum
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://twitter.com/HPB_Global" target="_blank">
+              <Link href="https://twitter.com/Hpdexglobal" target="_blank">
                 Twitter
               </Link>
             </HeaderText>

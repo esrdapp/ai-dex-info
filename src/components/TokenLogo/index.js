@@ -16,6 +16,16 @@ const LOGO_URL = {
   "0xdfe4051195a09a67defc36ce6bbb5e6edea745cb":"https://dex.hpbnode.com/download/token-list/logo/asset_KING.svg",
   "0xef8432fd5d8b6b33a9915cd6ad22fe9b6718db9b":"https://dex.hpbnode.com/download/token-list/logo/asset_DON.svg",
   "0x8ce49d1feccc1b44fe69a9089c385f43091c1c6b":"https://dex.hpbnode.com/download/token-list/logo/ONE.svg",
+  "0xe87fca450807e4180710da738660efef5198c173":"https://dex.hpbnode.com/download/token-list/logo/asset_liadrin.svg",
+  "0x88288f66fcfa6eeeb6413672c0722389b461dead":"https://dex.hpbnode.com/download/token-list/logo/asset_leposter.svg",
+  "0xd55fe231cb55dda0bb09df0a55b59492ccfa8643":"https://dex.hpbnode.com/download/token-list/logo/asset_asterius.svg",
+  "0x9fa2eb3f740055ee6cb1ff11b854f27fbe200e7d":"https://dex.hpbnode.com/download/token-list/logo/asset_torren.svg",
+  "0xf72abc6c8a18bdccb13c6ea6a6d0a2d6644d7d33":"https://dex.hpbnode.com/download/token-list/logo/asset_teresa.svg",
+  "0x18b52d987e2047d7a9c389a2ce41160dcd24a9cf":"https://dex.hpbnode.com/download/token-list/logo/asset_key.svg",
+  "0xe7d30f3ed0604b4399852a7309513ed8f27e3c39":"https://dex.hpbnode.com/download/token-list/logo/asset_gold.svg",
+  "0x2885d06706da3d9335ad8e484945d96d153476b4":"https://dex.hpbnode.com/download/token-list/logo/asset_xp.svg",
+  "0xcabf7e4c9d28f4957ba6f5558f81ef833fc2914e":"https://dex.hpbnode.com/download/token-list/logo/asset_hdog.svg",
+  "0xe516282d58468ef5664cd549849744a4a823af22":"https://dex.hpbnode.com/download/token-list/logo/asset_BTING.svg",
 }
 
 const BAD_IMAGES = {}

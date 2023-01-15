@@ -430,10 +430,10 @@ export const Search = ({ small = false }) => {
               : below410
                 ? 'Search...'
                 : below470
-                  ? 'Search Hpdex...'
+                  ? 'Search AI-DEX...'
                   : below700
                     ? 'Search pairs and tokens...'
-                    : 'Search Hpdex pairs and tokens...'
+                    : 'Search AI-DEX pairs and tokens...'
           }
           value={value}
           onChange={(e) => {

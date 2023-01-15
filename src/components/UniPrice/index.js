@@ -35,8 +35,8 @@ export default function UniPrice() {
       : 0
   }, [daiPair, usdcPair, usdtPair, oldUsdtPair])
 
-  const daiPerEth = daiPair ? parseFloat(daiPair.token0Price).toFixed(2) : '-'
-  const usdcPerEth = usdcPair ? parseFloat(usdcPair.token0Price).toFixed(2) : '-'
+  // const daiPerEth = daiPair ? parseFloat(daiPair.token0Price).toFixed(2) : '-'
+  // const usdcPerEth = usdcPair ? parseFloat(usdcPair.token0Price).toFixed(2) : '-'
   const usdtPerEth = usdtPair ? parseFloat(usdtPair.token1Price).toFixed(2) : '-'
   const oldUsdtPerEth = oldUsdtPair ? parseFloat(oldUsdtPair.token1Price).toFixed(2) : '-'
 

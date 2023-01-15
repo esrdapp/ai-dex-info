@@ -164,27 +164,27 @@ function SideNav({ history }) {
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              <Link href="https://hpdex.org" target="_blank">
-                Hpdex.org
+              <Link href="https://ai-dex.net" target="_blank">
+                AI-DEX.net
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://github.com/hpdex-project" target="_blank">
+              <Link href="https://github.com/esrdapp/ai-dex-swap" target="_blank">
               Github
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://t.me/hpdexglobal" target="_blank">
+              <Link href="https://t.me/ai_dex" target="_blank">
                 Telegram
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://www.hpclub.org/" target="_blank">
+              <Link href="https://www.hpb.io/" target="_blank">
               Forum
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://twitter.com/Hpdexglobal" target="_blank">
+              <Link href="https://twitter.com/ai-dex" target="_blank">
                 Twitter
               </Link>
             </HeaderText>

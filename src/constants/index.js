@@ -13,7 +13,7 @@ export const timeframeOptions = {
 
 // token list urls to fetch tokens from - use for warnings on tokens and pairs
 export const SUPPORTED_LIST_URLS__NO_ENS = [
-  'https://dex.hpbnode.com/download/Hpdex.tokenlist.json',
+  'https://raw.githubusercontent.com/esrdapp/tokenlist-ai-dex/main/hpb.tokenlist.json',
 ]
 
 // hide from overview list
@@ -52,7 +52,7 @@ export const BLOCKED_WARNINGS = {
 }
 
 /**
- * For tokens that cause erros on fee calculations
+ * For tokens that cause errors on fee calculations
  */
 export const FEE_WARNING_TOKENS = ['0xd46ba6d942050d489dbd938a2c909a5d5039a161']
 
